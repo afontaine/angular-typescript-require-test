@@ -5,11 +5,18 @@ import angular = require("angular");
 
 class IndexCtrl {
 
-  public message: string;
   static $inject = ["$scope", "TestService"];
 
-  constructor(private $scope: angular.IScope, testService: TestService) {
-    this.message = testService.message;
+  public body: string;
+  public title: string;
+
+  constructor(private $scope: angular.IScope, testService: TestService.ITestService) {
+    var num: number = Math.ceil(Math.random() * 100);
+    console.log(num);
+    testService.getPost(num).then((response: angular.IHttpPromiseCallbackArg<TestService.IJsonPlaceholderPost>) => {
+      this.body = response.data.body;
+      this.title = response.data.title;
+    });
   }
 }
 
