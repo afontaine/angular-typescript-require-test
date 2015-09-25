@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "'",
+  "authors": [
+    "Andrew Fontaine <AFontiane@phoenix-interactive.com>"
+  ],
+  "license": "MIT",
+  "directory": "src/bower_components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-bootstrap": "~0.13.4",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "jquery": "~2.1.4",
+    "requirejs": "~2.1.20"
+  }
+}
