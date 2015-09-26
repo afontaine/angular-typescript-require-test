@@ -33,7 +33,7 @@ function config(
       "contentView": {
         templateUrl: "views/app/tech.html",
         controller: TechCtrl,
-        controllerAs: 'vm'
+        controllerAs: "vm"
       }
     }
   });
