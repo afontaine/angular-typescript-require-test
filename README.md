@@ -7,13 +7,13 @@ This is a small test app to show an example code layout.
 1. Get node/io
 2. Get gulp, tsd, tsc, bower
 
-  ```
+  ```sh
   $ npm install -g gulp tsd tsc bower
   ```
 
 3. Install ALL THE DEPENDENCIES (make a hot beverage while you wait)
 
-  ```
+  ```sh
   $ npm install
   $ bower install
   $ tsd install
@@ -21,7 +21,7 @@ This is a small test app to show an example code layout.
 
 4. Compile and serve
 
-  ```
+  ```sh
   $ gulp
   ```
 
@@ -40,8 +40,9 @@ top, with directories for modules within. Ideally, we would pull the modules out
 completely and add them in another way.
 
 ## Things to work on
-- [ ] Getting TypeScript internal modules and Requirejs external modules
+- [ ] ~~Getting TypeScript internal modules and Requirejs external modules
   cooperating. I want to put a Angular module's code under its own TypeScript
   module, and split that across various files. (App, App.Controller,
-  App.Service, etc.)
+  App.Service, etc.)~~
+  **[Mixing module types is bad I guess?](http://stackoverflow.com/a/31041818)**
 - [ ] Tests, karmajs, phantomjs, jasmine, jasmine-given

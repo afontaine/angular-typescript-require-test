@@ -1,6 +1,6 @@
 import App = require("./app.module");
-
-import MainCtrl = require("./controllers/main");
+import AppCtrl = require("./app.controller");
+import TechCtrl = require("./controllers/tech");
 import IndexCtrl = require("./controllers/index");
 
 App.config(config);
@@ -10,22 +10,30 @@ function config(
   $urlMatcherFactoryProvider: angular.ui.IUrlMatcherFactory
 ) {
   $urlMatcherFactoryProvider.strictMode(false);
-  $stateProvider.state("home", {
-    url: "/home",
+  $stateProvider.state("index", {
     views: {
-      "contentView": {
-        templateUrl: "views/tech.html",
-        controller: MainCtrl,
+      "body": {
+        templateUrl: "views/app/index.html",
+        controller: AppCtrl,
         controllerAs: "vm"
       }
     }
-  }).state("index", {
+  }).state("index.home", {
     url: "",
     views: {
       "contentView": {
-        templateUrl: "views/index.html",
+        templateUrl: "views/app/home.html",
         controller: IndexCtrl,
         controllerAs: "vm"
+      }
+    }
+  }).state("index.tech", {
+    url: "/tech",
+    views: {
+      "contentView": {
+        templateUrl: "views/app/tech.html",
+        controller: TechCtrl,
+        controllerAs: 'vm'
       }
     }
   });

@@ -1,7 +1,7 @@
 import App = require("../app.module");
 import angular = require("angular");
 
-class MainCtrl {
+class TechCtrl {
 
   public awesomeThings: Array<string>;
 
@@ -10,6 +10,6 @@ class MainCtrl {
   }
 }
 
-App.controller("MainCtrl", MainCtrl);
+App.controller("TechCtrl", TechCtrl);
 
-export = MainCtrl;
+export = TechCtrl;
