@@ -5,7 +5,6 @@
     "Andrew Fontaine <AFontiane@phoenix-interactive.com>"
   ],
   "license": "MIT",
-  "directory": "src/bower_components",
   "ignore": [
     "**/.*",
     "node_modules",
