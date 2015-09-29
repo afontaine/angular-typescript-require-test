@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    html5Lint = require('gulp-html5-lint'),
     gulpConfig = require('./gulpfile.config');
 
 var config = new gulpConfig();

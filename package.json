@@ -21,6 +21,7 @@
     "gulp-scss-lint": "^0.3.3",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-tslint": "^3.2.0",
+    "gulp-tslint-stylish": "^1.0.4",
     "gulp-typescript": "^2.9.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.10",

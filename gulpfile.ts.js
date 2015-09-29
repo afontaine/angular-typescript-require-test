@@ -1,6 +1,7 @@
 var gulp = require("gulp"),
     tsc = require('gulp-typescript'),
     tslint = require('gulp-tslint'),
+    stylish = require('gulp-tslint-stylish'),
     sourcemaps = require('gulp-sourcemaps'),
     gulpConfig = require('./gulpfile.config'),
     tsProject = tsc.createProject('src/tsconfig.json');
@@ -18,7 +19,7 @@ gulp.task('ts:compile', ['ts:lint'], function () {
 gulp.task('ts:lint', function () {
   return gulp.src(config.typescript)
     .pipe(tslint())
-    .pipe(tslint.report('prose'));
+    .pipe(tslint.report(stylish, { bell: false }));
 });
 
 gulp.task('ts:watch', function() {
